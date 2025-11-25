@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, Info, Image, Bell, Users, GraduationCap, Mail, ChevronDown, Search, FileText } from 'lucide-react';
+import logo from '../assets/if_logo.png';
 
 const StudentNavbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -54,7 +55,7 @@ const StudentNavbar = () => {
           
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/src/assets/if_logo.png" alt="IF Logo" className="h-12 w-auto" />
+            <img src={logo} alt="IF Logo" className="h-12 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
