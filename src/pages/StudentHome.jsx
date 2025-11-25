@@ -5,6 +5,7 @@ import WhatWeDo from '../components/WhatWeDo';
 import OurWorks from '../components/OurWorks';
 import MembershipSection from '../components/MembershipSection';
 import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 
 const StudentHome = () => {
   return (
@@ -16,6 +17,7 @@ const StudentHome = () => {
       <OurWorks />
       <MembershipSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 };
