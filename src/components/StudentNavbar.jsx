@@ -43,7 +43,7 @@ const StudentNavbar = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       } else {
         // Section doesn't exist, navigate to home page with hash
-        window.location.href = `/student/home${item.href}`;
+        window.location.href = `/imaigal_webapp/student/home${item.href}`;
       }
     }
   };
