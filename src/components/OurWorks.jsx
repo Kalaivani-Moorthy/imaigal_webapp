@@ -1,5 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
 import { Images, Users, Video, Grid3X3, Eye, X } from 'lucide-react';
+import gallery01 from '../assets/gallery01.jpg';
+import gallery02 from '../assets/gallery02.jpg';
+import gallery03 from '../assets/gallery03.jpg';
+import gallery04 from '../assets/gallery04.jpg';
+import gallery05 from '../assets/gallery05.png';
+import gallery06 from '../assets/gallery06.png';
+import gallery07 from '../assets/gallery07.png';
+import gallery08 from '../assets/gallery08.png';
+import gallery09 from '../assets/gallery9.png';
+import gallery10 from '../assets/gallery10.png';
 
 const OurWorks = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -80,8 +90,8 @@ const OurWorks = () => {
           {/* Images Filter */}
           {(activeTab === 'all' || activeTab === 'images') && (
             <>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery01.jpg')}>
-                <img src="/src/assets/gallery01.jpg" alt="Gallery 1" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery01)}>
+                <img src={gallery01} alt="Gallery 1" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />
@@ -89,8 +99,8 @@ const OurWorks = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery02.jpg')}>
-                <img src="/src/assets/gallery02.jpg" alt="Gallery 2" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery02)}>
+                <img src={gallery02} alt="Gallery 2" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />
@@ -98,8 +108,8 @@ const OurWorks = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery03.jpg')}>
-                <img src="/src/assets/gallery03.jpg" alt="Gallery 3" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery03)}>
+                <img src={gallery03} alt="Gallery 3" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />
@@ -107,8 +117,8 @@ const OurWorks = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery04.jpg')}>
-                <img src="/src/assets/gallery04.jpg" alt="Gallery 4" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery04)}>
+                <img src={gallery04} alt="Gallery 4" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />
@@ -116,8 +126,8 @@ const OurWorks = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery10.png')}>
-                <img src="/src/assets/gallery10.png" alt="Gallery 10" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery10)}>
+                <img src={gallery10} alt="Gallery 10" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />
@@ -131,8 +141,8 @@ const OurWorks = () => {
           {/* Meeting Filter */}
           {(activeTab === 'all' || activeTab === 'meeting') && (
             <>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery05.png')}>
-                <img src="/src/assets/gallery05.png" alt="Gallery 5" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery05)}>
+                <img src={gallery05} alt="Gallery 5" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />
@@ -140,8 +150,8 @@ const OurWorks = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery06.png')}>
-                <img src="/src/assets/gallery06.png" alt="Gallery 6" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery06)}>
+                <img src={gallery06} alt="Gallery 6" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />
@@ -149,8 +159,8 @@ const OurWorks = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery07.png')}>
-                <img src="/src/assets/gallery07.png" alt="Gallery 7" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery07)}>
+                <img src={gallery07} alt="Gallery 7" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />
@@ -158,8 +168,8 @@ const OurWorks = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery08.png')}>
-                <img src="/src/assets/gallery08.png" alt="Gallery 8" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery08)}>
+                <img src={gallery08} alt="Gallery 8" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />
@@ -167,8 +177,8 @@ const OurWorks = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage('/src/assets/gallery9.png')}>
-                <img src="/src/assets/gallery9.png" alt="Gallery 9" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group cursor-pointer" onClick={() => setSelectedImage(gallery09)}>
+                <img src={gallery09} alt="Gallery 9" className="w-full h-64 object-cover group-hover:blur-sm transition-all duration-300" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                     <Eye className="w-8 h-8 mx-auto mb-2" />

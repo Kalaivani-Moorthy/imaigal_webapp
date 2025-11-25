@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import { BellIcon, MoonIcon, SunIcon, Menu, X } from 'lucide-react';
+import logo from '../assets/if_logo.png';
 
 const DashboardLayout = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,7 +26,7 @@ const DashboardLayout = ({ children }) => {
                   <Menu className="w-6 h-6" />
                 </button>
                 
-                <img src="/src/assets/if_logo.png" alt="IF Logo" className="w-8 h-8 sm:w-12 sm:h-12 mr-3" />
+                <img src={logo} alt="IF Logo" className="w-8 h-8 sm:w-12 sm:h-12 mr-3" />
                 <div className="hidden sm:block">
                   <h1 className="text-lg sm:text-2xl font-bold text-gray-800">Welcome back, Admin</h1>
                   <p className="text-gray-600 text-xs sm:text-sm mt-1 hidden md:block">Here's what's happening with your foundation today</p>
